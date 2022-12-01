@@ -23,9 +23,11 @@ public class streamwithAmazon {
 		driver.get("https://www.amazon.com");
 		List<WebElement> eleList=driver.findElements(By.tagName("a"));
 		List<String> linknames=eleList.stream().map(element->element.getText()).filter(x->x.startsWith("S")).collect(Collectors.toList());
-		
-		
+
 		commenting for practice DEF
+
+		commenting for practice ABC
+
 		//List<String> l2=linknames.stream().filter(x->x.startsWith("S")).collect(Collectors.toList());
 		
 		//linknames.forEach(System.out::println);
